@@ -231,10 +231,9 @@ I haven't used shaders a huge amount, so if you have a preferred format let me k
 If this tool was helpful to you or saved you some time and effort,
 please consider supporting its development (along with other free tools): 
 
-[Donate via PayPal](https://www.paypal.me/azmreece/10)
+[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/azmreece/10)
 
-[![Buy Me a Coffee via Ko-Fi](https://az743702.vo.msecnd.net/cdn/kofi2.png)](https://ko-fi.com/O4O3F3TN)
-<a href='https://ko-fi.com/O4O3F3TN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0'  /></a>
+<a href='https://ko-fi.com/O4O3F3TN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0' alt='Buy Me a Coffee via Ko-Fi' /></a>
 
 If you don't have the means or otherwise don't want to donate but still found the library useful,
 there are other ways you can help out:
