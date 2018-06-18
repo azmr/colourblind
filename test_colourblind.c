@@ -8,8 +8,8 @@
 
 int main()
 {
-	rgb_255 Black255 = {0,0,0}, Red255 = {255,0,0}, White255 = {255,255,255};
-	rgb_norm BlackNorm = cbNorm(Black255), RedNorm = cbNorm(Red255), WhiteNorm = cbNorm(White255);
+	cb_rgb_255 Black255 = {0,0,0}, Red255 = {255,0,0}, White255 = {255,255,255};
+	cb_rgb BlackNorm = cbNorm(Black255), RedNorm = cbNorm(Red255), WhiteNorm = cbNorm(White255);
 
 	TestGroup("Partial Steps")
 	{
@@ -59,7 +59,7 @@ int main()
 
 			TestGroup("Known colours")
 			{
-				rgb_255 RGB;
+				cb_rgb_255 RGB;
 #define TEST(nopia, r1, g1, b1, r2, g2, b2) \
 					TestGroup(#nopia) \
 						RGB.R=r1, RGB.G=g1, RGB.B=b1; \
