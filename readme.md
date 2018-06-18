@@ -231,7 +231,7 @@ I haven't used shaders a huge amount, so if you have a preferred format let me k
 If this tool was helpful to you or saved you some time and effort,
 please consider supporting its development (along with other free tools): 
 
-[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/azmreece/10)
+<a href='https://www.paypal.me/azmreece/10' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://img.shields.io/badge/Donate-PayPal-green.svg' border='0' alt='Donate via PayPal' /></a>
 
 <a href='https://ko-fi.com/O4O3F3TN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0' alt='Buy Me a Coffee via Ko-Fi' /></a>
 
