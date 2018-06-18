@@ -143,11 +143,43 @@ void   cbRemoveGamma(float *R, float *G, float *B);
 ### Types
 ```c
 /* Both structs have members R, G, B, for Red, Green, Blue, respectively */
-cb_rgb_255; /* 0 - 255 */
-cb_rgb; /* 0.0f - 1.0f */
+typedef struct cb_rgb_255 cb_rgb_255; /* 0 - 255 */
+typedef struct cb_rgb cb_rgb; /* 0.0f - 1.0f */
+```
+
+I've given the specifiers a few different names for the different forms of colourblindness:
+```c
+enum cb_impairment {
+    cbUnimpaired,
+    cbProtanopia,   /* = cbRedGreenDim = cbMissingRed   */
+    cbDeuteranopia, /* = cbRedGreen    = cbMissingGreen */
+    cbTritanopia,   /* = cbBlueYellow  = cbMissingBlue  */
+    cbImpairmentCount /* = 4 */
+};
+```
+
+There are also indices into some guideline scores:
+```c
+enum cb_guideline {
+    cbISO9241_3_ContrastRatio_Pass,
+    cbWCAG_Contrast_AALarge,
+    cbWCAG_Contrast_AAALarge,
+    cbWCAG_Contrast_AA,
+    cbWCAG_Contrast_AAA,
+    cbISO9241_3_ContrastModulation,
+};
 ```
 
 ### Constants
+```c
+/* Indexed by cb_impairment enum values */
+char *cbImpairmentStrings[];
+
+/* Indexed by cb_guideline enum values */
+char *cbGuidelineStrings[];
+float cbGuidelineScores[];
+```
+
 ### Compile-time options
 #### Gamma
 By default, any gamma-correction is done with the most accurate method I'm aware of.

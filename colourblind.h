@@ -37,7 +37,14 @@ typedef struct cb_rgb_255 cb_rgb_255;
 typedef struct cb_rgb cb_rgb;
 
 typedef enum cb_impairment cb_impairment;
+typedef enum cb_guideline cb_guideline;
 
+/******************************************************************************
+ * Constants
+ ***********/
+char *cbImpairmentStrings[];
+char *cbGuidelineStrings[];
+float cbGuidelineScores[];
 
 /******************************************************************************
  * Function Prototypes
@@ -141,13 +148,13 @@ char *cbImpairmentStrings[] =
     COL_GUIDELINE(ISO9241_3, ContrastModulation, Pass, >=, 0.5) \
 
 #define COL_GUIDELINE(source, testname, rating, comparison, value) cb## source ##_## testname ##_## rating,
-enum                               { COL_GUIDELINES cgGuidelineCount };
+typedef enum cb_guideline    { COL_GUIDELINES cgGuidelineCount } cb_guideline;
 #undef COL_GUIDELINE
 #define COL_GUIDELINE(source, testname, rating, comparison, value) #source " " #testname " " #rating,
-char *cbGuidelineStrings[] =       { COL_GUIDELINES };
+char *cbGuidelineStrings[] = { COL_GUIDELINES };
 #undef COL_GUIDELINE
 #define COL_GUIDELINE(source, testname, rating, comparison, value) value,
-static float cbGuidelineScores[] = { COL_GUIDELINES };
+float cbGuidelineScores[]  = { COL_GUIDELINES };
 #undef COL_GUIDELINE
 
 
