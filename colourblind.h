@@ -18,6 +18,10 @@
  * - Add working ColourDifference with Luv
  */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #ifdef I_PREFER_THE_AMERICAN_SPELLING_OF_COLOR_BECAUSE_I_AM_SILLY
 #define Colo_rblind       Colorblind
 #define Colo_rblind255    Colorblind255
@@ -378,3 +382,6 @@ void Colo_rblind(cb_impairment Impairment, float *R, float *G, float *B) {
 }
 
 #endif/* cbIMPLEMENTATION */
+#ifdef __cplusplus
+}
+#endif
